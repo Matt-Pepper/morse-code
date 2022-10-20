@@ -1,4 +1,5 @@
 import * as data from "./data/dictionary.js";
+import * as translate from "./logic/translate.js"
 
 const output = document.getElementById("output");
 const input = document.getElementById("input");
@@ -34,7 +35,7 @@ const setup = () => {
 
 const inputCharacters = () => {
 	const inputArr = [...input.value.toUpperCase()];
-	translate(inputArr);
+	const output = translate.translate(inputArr);
 };
 
 const randomTones = () => {
@@ -57,21 +58,6 @@ const toneSound = (time) => {
 	o.start();
 };
 
-const translate = (inputArr) => {
-	const regex = /^[\.\| -]+$/;
-	if (regex.test(input.value)) {
-        const outputArr = input.value.trim().split(" ").map((item) => {
 
-            return Object.entries(data.DICTIONARY).find(([key, value]) => item == value)[0]
-            
-        });
-		output.textContent = outputArr.join("");
-	} else {
-		const outputArr = inputArr.map((item) => {
-			return data.DICTIONARY[item];
-		});
-		output.textContent = outputArr.join(" ");
-	}
-};
 
 setup();
