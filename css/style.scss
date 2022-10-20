@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Ubuntu:wght@700&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 98vh;
+	background-color: #d6d4c4;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+
+	background-color: #41533b;
+	padding: 20px;
+
+	&__title {
+		font-family: "Ubuntu", sans-serif;
+		color: #d6d4c4;
+		font-weight: 900;
+	}
+
+	&__info {
+		font-size: 30pt;
+		color: #d6d4c4;
+		&:hover {
+			color: #9e9a75;
+		}
+	}
+}
+%border {
+	border: 2px solid #41533b;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+	&__translation {
+		//gap: 10px;
+		display: flex;
+		flex-grow: 1;
+		width: 99%;
+		max-height: 50vh;
+	}
+	&__settings {
+	}
+}
+
+.settings {
+	padding: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+
+		height: fit-content;
+		width: 25%;
+
+		& i {
+			padding: 20px;
+			font-size: 30pt;
+		}
+	}
+	&__section {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		text-align: center;
+	}
+	&__advance {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		width: 25%;
+	}
+    &__slider {
+        width: 100%;
+
+    }
+    &__picker {
+        width: 50px;
+    }
+}
+
+#input {
+	flex-grow: 1;
+	resize: none;
+	@extend %border;
+	min-width: calc(50% - 10px);
+	overflow-y: scroll;
+	// max-height: 50%;
+	padding: 5px;
+	max-height: 80%;
+	box-sizing: border-box;
+}
+
+#output {
+	box-sizing: border-box;
+	background-color: #9e9a75;
+	flex-grow: 1;
+	min-width: calc(50% - 10px);
+	@extend %border;
+	overflow-wrap: break-word;
+	padding: 5px;
+	max-height: 80%;
+
+	overflow-y: scroll;
+}
+
+.footer {
+	background-color: #41533b;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
