@@ -4,30 +4,33 @@
 	margin: 0;
 }
 
+$main-color: #d6d4c4;
+$accent-color: #41533b;
+$output-color: #9e9a75;
+
 body {
 	font-family: "Roboto", sans-serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 98vh;
-	background-color: #d6d4c4;
+	background-color: $main-color;
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
-
-	background-color: #41533b;
+	background-color: $accent-color;
 	padding: 20px;
 
 	&__title {
 		font-family: "Ubuntu", sans-serif;
-		color: #d6d4c4;
+		color: $main-color;
 		font-weight: 900;
 	}
 }
 %border {
-	border: 2px solid #41533b;
+	border: 2px solid $accent-color;
 }
 
 .main {
@@ -41,11 +44,15 @@ body {
 		width: 99%;
 		max-height: 50vh;
 	}
+	& h2 {
+		padding: 20px;
+		font-size: 19pt;
+		color: $accent-color;
+	}
 }
 
 %translation {
 	margin-left: 10px;
-	margin-top: 20px;
 	flex-grow: 1;
 	resize: none;
 	@extend %border;
@@ -54,7 +61,7 @@ body {
 	max-height: 80%;
 	box-sizing: border-box;
 	overflow-y: scroll;
-	font-size: 20pt
+	font-size: 20pt;
 }
 
 #input {
@@ -62,7 +69,7 @@ body {
 }
 
 #output {
-	background-color: #9e9a75;
+	background-color: $output-color;
 	overflow-wrap: break-word;
 	@extend %border;
 	@extend %translation;
@@ -70,11 +77,11 @@ body {
 }
 
 .footer {
-	background-color: #41533b;
+	background-color: $accent-color;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	padding: 10px;
-	color: white;
+	color: $main-color;
 	text-align: center;
 }
