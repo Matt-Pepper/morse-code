@@ -45,6 +45,11 @@ body {
   font-size: 19pt;
   color: #41533b;
 }
+.main p {
+  padding: 20px;
+  font-size: 15pt;
+  color: #41533b;
+}
 
 #output, #input {
   margin-left: 10px;

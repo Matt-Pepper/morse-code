@@ -49,6 +49,11 @@ body {
 		font-size: 19pt;
 		color: $accent-color;
 	}
+	& p {
+		padding: 20px;
+		font-size: 15pt;
+		color: $accent-color;
+	}
 }
 
 %translation {
