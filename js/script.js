@@ -1,11 +1,6 @@
-import inputEvent from "./DOM/script.js";
-import { translate } from './logic/translate'
-
-
+import inputEvent from "./DOM/dom.js";
 
 const setup = () => {
 	inputEvent();
-
-	
 };
 setup();

@@ -1,11 +1,11 @@
-import DICTIONARY from "../data/dictionary";
+import { DICTIONARY } from "../data/dictionary";
 
 export const translate = (input) => {
 	const regex = /^[\.\| -]+$/;
 
 	if (regex.test(input)) {
 		return morseToEnglish(input).join("");
-    } else {
+	} else {
 		return englishToMorse(input).join(" ");
 	}
 };
@@ -20,7 +20,10 @@ const morseToEnglish = (input) => {
 };
 
 const englishToMorse = (input) => {
-	return input.toUpperCase().split("").map((item) => {
-		return DICTIONARY[item];
-	});
+	return input
+		.toUpperCase()
+		.split("")
+		.map((item) => {
+			return DICTIONARY[item];
+		});
 };
