@@ -26,13 +26,6 @@ body {
 		font-weight: 900;
 	}
 
-	&__info {
-		font-size: 30pt;
-		color: #d6d4c4;
-		&:hover {
-			color: #9e9a75;
-		}
-	}
 }
 %border {
 	border: 2px solid #41533b;
@@ -50,47 +43,10 @@ body {
 		width: 99%;
 		max-height: 50vh;
 	}
-	&__settings {
-	}
+
 }
 
-.settings {
-	padding: 10px;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	&__buttons {
-		display: flex;
-		flex-direction: column;
 
-		height: fit-content;
-		width: 25%;
-
-		& i {
-			padding: 20px;
-			font-size: 30pt;
-		}
-	}
-	&__section {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
-		text-align: center;
-	}
-	&__advance {
-		display: flex;
-		flex-direction: column;
-		gap: 15px;
-		width: 25%;
-	}
-    &__slider {
-        width: 100%;
-
-    }
-    &__picker {
-        width: 50px;
-    }
-}
 
 #input {
 	flex-grow: 1;

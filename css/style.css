@@ -24,13 +24,6 @@ body {
   color: #d6d4c4;
   font-weight: 900;
 }
-.header__info {
-  font-size: 30pt;
-  color: #d6d4c4;
-}
-.header__info:hover {
-  color: #9e9a75;
-}
 
 #output, #input {
   border: 2px solid #41533b;
@@ -46,40 +39,6 @@ body {
   flex-grow: 1;
   width: 99%;
   max-height: 50vh;
-}
-.settings {
-  padding: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.settings__buttons {
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-  width: 25%;
-}
-.settings__buttons i {
-  padding: 20px;
-  font-size: 30pt;
-}
-.settings__section {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  text-align: center;
-}
-.settings__advance {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 25%;
-}
-.settings__slider {
-  width: 100%;
-}
-.settings__picker {
-  width: 50px;
 }
 
 #input {

@@ -1,4 +1,4 @@
-import { DICTIONARY } from "../data/dictionary";
+import DICTIONARY from "../data/dictionary";
 
 export const translate = (input) => {
 	const regex = /^[\.\| -]+$/;
