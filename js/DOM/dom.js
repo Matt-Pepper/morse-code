@@ -4,9 +4,8 @@ const output = document.getElementById("output");
 const input = document.getElementById("input");
 
 const getInput = () => {
-	const inputArr = [...input.value.toUpperCase()];
-	const outputString = translate(inputArr);
-	console.log(inputArr);
+	const inputString = input.value.toUpperCase();
+	const outputString = translate(inputString);
 	output.textContent = outputString;
 };
 

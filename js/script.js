@@ -1,4 +1,4 @@
-import inputEvent from "./DOM/dom.js";
+import { inputEvent } from "./DOM/dom.js";
 
 const setup = () => {
 	inputEvent();

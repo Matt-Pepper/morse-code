@@ -41,25 +41,23 @@ body {
   max-height: 50vh;
 }
 
-#input {
+#output, #input {
+  margin-left: 10px;
+  margin-top: 20px;
   flex-grow: 1;
   resize: none;
   min-width: calc(50% - 10px);
-  overflow-y: scroll;
   padding: 5px;
   max-height: 80%;
   box-sizing: border-box;
+  overflow-y: scroll;
+  font-size: 20pt;
 }
 
 #output {
-  box-sizing: border-box;
   background-color: #9e9a75;
-  flex-grow: 1;
-  min-width: calc(50% - 10px);
   overflow-wrap: break-word;
-  padding: 5px;
-  max-height: 80%;
-  overflow-y: scroll;
+  letter-spacing: 6px;
 }
 
 .footer {
@@ -67,4 +65,7 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
+  padding: 10px;
+  color: white;
+  text-align: center;
 }

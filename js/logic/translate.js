@@ -1,4 +1,4 @@
-import { DICTIONARY } from "../data/dictionary";
+import { DICTIONARY } from "../data/dictionary.js";
 
 export const translate = (input) => {
 	const regex = /^[\.\| -]+$/;
@@ -20,10 +20,8 @@ const morseToEnglish = (input) => {
 };
 
 const englishToMorse = (input) => {
-	return input
-		.toUpperCase()
-		.split("")
-		.map((item) => {
-			return DICTIONARY[item];
-		});
+	console.log(input);
+	return input.split("").map((item) => {
+		return DICTIONARY[item];
+	});
 };

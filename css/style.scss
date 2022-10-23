@@ -25,7 +25,6 @@ body {
 		color: #d6d4c4;
 		font-weight: 900;
 	}
-
 }
 %border {
 	border: 2px solid #41533b;
@@ -37,40 +36,37 @@ body {
 	flex-grow: 1;
 
 	&__translation {
-		//gap: 10px;
 		display: flex;
 		flex-grow: 1;
 		width: 99%;
 		max-height: 50vh;
 	}
-
 }
 
-
-
-#input {
+%translation {
+	margin-left: 10px;
+	margin-top: 20px;
 	flex-grow: 1;
 	resize: none;
 	@extend %border;
 	min-width: calc(50% - 10px);
-	overflow-y: scroll;
-	// max-height: 50%;
 	padding: 5px;
 	max-height: 80%;
 	box-sizing: border-box;
+	overflow-y: scroll;
+	font-size: 20pt
+}
+
+#input {
+	@extend %translation;
 }
 
 #output {
-	box-sizing: border-box;
 	background-color: #9e9a75;
-	flex-grow: 1;
-	min-width: calc(50% - 10px);
-	@extend %border;
 	overflow-wrap: break-word;
-	padding: 5px;
-	max-height: 80%;
-
-	overflow-y: scroll;
+	@extend %border;
+	@extend %translation;
+	letter-spacing: 6px;
 }
 
 .footer {
@@ -78,4 +74,7 @@ body {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	padding: 10px;
+	color: white;
+	text-align: center;
 }
