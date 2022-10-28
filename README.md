@@ -1,6 +1,8 @@
 # Morse Code Translator
 
-[Link to website](https://github.com/Matt-Pepper/morse-code)
+![image of website](image/screenshot.PNG)
+
+##[Link to website](https://github.com/Matt-Pepper/morse-code)
 
 ## Using tests
 - clone project
