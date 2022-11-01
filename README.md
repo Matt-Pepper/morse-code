@@ -2,7 +2,7 @@
 
 ![image of website](image/screenshot.PNG)
 
-## [Link to website](https://github.com/Matt-Pepper/morse-code)
+## [Link to website](https://matt-pepper.github.io/morse-code/)
 
 ## Using tests
 - clone project
